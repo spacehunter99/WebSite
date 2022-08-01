@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Три поросенка</title>
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="navbar">
+        <div class="container flex">
+            <img src="img/mainLogo.png" alt="logo">
+            <nav>
+                <ul class="flex">
+                    <li><a href="#frameOptions">варианты каркаса</a></li>
+                    <li><a href="#howToBuild">как собрать</a></li>
+                    <li><a href="#chooseYours">выбрать свой</a></li>
+                    <li><a href="#howToOrder">как заказать</a></li>
+                    <li><a href="#contacts">контакты</a></li>
+                </ul>
+            </nav>
+            <img class="phoneImage" src="img/contactNumber.png" alt="contact number">
+        </div>
+    </div>
+
+    <!-- Заголовок -->
+    <div class="mainTitle">
+        <div class="container flex">
+            <h1>НАДЕЖНЫЕ КАРКАСЫ ДОМОВ</h1>
+            <h2>для ДАЧНЫХ домовладений и ТУРБАЗ</h2>
+        </div>
+    </div>
+
+    <!-- Построй дом сам -->
+    <section>
+        <div class="buldYourself">
+            <div class="container grid">
+                <div class="buildYourselfText">
+                    <h2>ПОСТРОЙ ДОМ САМ</h2>
+                    <ul>
+                        <li>Простой и качественный каркас для самостоятельной сборки</li>
+                        <li>Детали домокомплекта заводского исполнения</li>
+                        <li>Понятная инструкция по сборке</li>
+                        <li>Подробный чертеж свайного фундмента</li>
+                        <li>Инструмент для сборки каркаса в комплекте</li>
+                        <li>Модульный принцип проектов - удобный набор помещений</li>
+                        <li>Любая отделка на вкус и цвет клиента</li>
+                    </ul>
+                </div>
+    
+                <div class="buildYourselfGallery">
+                    <div class="mySlides fade">
+                        <img src="img/BYgallery/1.png" alt="home 1">
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <img src="img/BYgallery/2.png" alt="frame 1">
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <img src="img/BYgallery/3.png" alt="home 2">
+                      </div>
+    
+                      <div class="mySlides fade">
+                        <img src="img/BYgallery/4.png" alt="frame 2">
+                      </div>
+    
+                      <div class="mySlides fade">
+                        <img src="img/BYgallery/5.png" alt="home 3">
+                      </div>
+    
+                      <div class="mySlides fade">
+                        <img src="img/BYgallery/6.png" alt="frame 1">
+                      </div>
+                    
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                      <div class="dotContainer">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                      </div>
+                </div>
+    
+                <div class="buildYourselfButton">
+                    <a href="#chooseYours">ВЫБРАТЬ СВОЙ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- С чего начать -->
+    <section>
+        <div class="startWith" id="chooseYours">
+            <div class="container grid">
+                <div class="startWithText">
+                    <h2>С ЧЕГО НАЧАТЬ</h2>
+                    <p>
+                        Теперь можно просто и дешево построить дачный домик у себя на участке
+                        Мы поможем! Несколько простых шагов:
+                    </p>
+                    <ol>
+                        <li>Выбери вариант каркаса для расчета цены</li>
+                        <li>Оставь заявку для оплаты и доставки</li>
+                        <li>Построй каркас по инструкции или поручи мастерам</li>
+                    </ol>
+                </div>
+                        
+                <div class="startWithImage">
+                    <img src="img/homeOptions/img_метр.png" alt="roulette">
+                </div>
+    
+                <div class="startWithOptions flex">
+                    <div id="verandaContainer">
+                        <img id="veranda" src="img/homeOptions/веранда_каркас.png" alt="veranda frame">
+                        <img id="verandaHidden" src="img/homeOptions/вариант_2.png" alt="veranda frame">
+                    </div>
+                    <div id="homeContainer">
+                        <img id="home" src="img/homeOptions/дом_каркас.png" alt="home frame">
+                        <img id="homeHidden" src="img/homeOptions/вариант_1.png" alt="home frame">
+                    </div>
+                    <div id="bathroomContainer">
+                        <img id="bathroom" src="img/homeOptions/ванна_каркас.png" alt="bathroom frame">
+                        <img id="bathroomHidden" src="img/homeOptions/вариант_3.png" alt="bathroom frame">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Инструкция -->
+
+    <section>
+        <div class="manual" id="howToBuild">
+            <div class="container grid">
+                <div class="manualText">
+                    <div class="manualHeader flex">
+                        <h2>ИНСТРУКЦИЯ</h2>
+                        <h3>забил гвоздь - построил дом</h3>
+                    </div>
+                    <p class="first">Используя нашу инструкцию, собери каркас сам.</p>
+                    <p>
+                       Не нужно пилить, строгать и подгонять - 
+                       эти работы мы уже выполнили на заводе. Для сборки 
+                       потребуется молоток, гвозди и строительный уровень - все это уже в наборе.
+                    </p>
+                    <ul>
+                        <li class="caption">Собери сам или</li>
+                        <li>Попроси помочь зятя/золовку/соседа</li>
+                        <li>Найми бригаду мастеров</li>
+                        <li>Закажи сборку у нас</li>
+                    </ul>
+                    <p>
+                        Каркас разработан нашими инженерами, опираясь на канадскую технологию, 
+                        с учетом особенностей Российского климата.
+                    </p>
+                    <ul>
+                        <li class="caption">Используемые материалы:</li>
+                        <li>Сухая строганная древесина хвойных пород, обработанная огнебиозащитой</li>
+                        <li>Гвозди оцинкованные винтовые/ершеные</li>
+                        <li>Инструкция с подробным описанием этапов и процесса сборки</li>
+                        <li>Каркас устанавливается на свайный фундамент по прилагаемому проекту</li>
+                    </ul>
+                    <p>
+                        Прилагается типовой проект электрической части и 
+                        рекомендации по наполнению ограждающих контсрукций 
+                        теплоизолирующим матриалом и элементами облицовки каркаса
+                    </p>
+                    <img class="brush" src="img/manualImages/manual_image_1png.png" alt="brush">
+                    <img class="nails" src="img/manualImages/manual_Image_2.png" alt="nails">
+                    <img class="helmet" src="img/manualImages/manual_image_3.png" alt="helmet">
+                </div>
+    
+                <div class="manualImage">
+                    <img src="img/housePlan.png" alt="house plan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог -->
+
+    <section>
+        <div class="catalog" id="frameOptions">
+            <div class="container grid">
+                <div class="catalogHeader">
+                    <h2>ВЫБЕРИ ВАРИАНТ ДАЧНОГО КАРКАСА</h2>
+                </div>
+    
+                <div class="catalogGallery1Text">
+                    <h2>НИФ-НИФ</h2>
+                    <h3>САМЫЙ МЛАДШИЙ БРАТ - ПРОСТОЙ И ЭКОНОМИЧНЫЙ ВАРИАНТ</h3>
+                    <p class="first">Внешние габариты каркаса 4000 x  5900 мм</p>
+                    <p>Площадь помещений - 21,3 кв.м</p>
+                    <p>2 комнаты: кухня и спальня</p>
+                </div>
+    
+                <div class="catalogGallery1">
+                    <div class="CG1Slides fade">
+                        <img src="img/CatalogGallery/case1/1.png" alt="home 1">
+                    </div>
+                    
+                    <div class="CG1Slides fade">
+                        <img src="img/CatalogGallery/case1/2.png" alt="home 2">
+                    </div>
+                    
+                    <div class="CG1Slides fade">
+                        <img src="img/CatalogGallery/case1/3.png" alt="home 3">
+                    </div>
+    
+                    <div class="CG1Slides fade">
+                        <img src="img/CatalogGallery/case1/4.png" alt="blueprint 1">
+                    </div>
+    
+                    <div class="CG1Slides fade">
+                        <img src="img/CatalogGallery/case1/5.png" alt="frame 1">
+                    </div>
+                    
+                    <a class="prev" onclick="CG1plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="CG1plusSlides(1)">&#10095;</a>
+    
+                    <div class="dotContainer">
+                        <span class="CG1dot" onclick="CG1currentSlide(1)"></span>
+                        <span class="CG1dot" onclick="CG1currentSlide(2)"></span>
+                        <span class="CG1dot" onclick="CG1currentSlide(3)"></span>
+                        <span class="CG1dot" onclick="CG1currentSlide(4)"></span>
+                        <span class="CG1dot" onclick="CG1currentSlide(5)"></span>
+                    </div>
+                </div>
+    
+                <div class="catalogGallery2Text">
+                    <h2>НУФ-НУФ</h2>
+                    <h3>ЭТО КАК МЛАДШИЙ, НО С ТЕРРАСОЙ</h3>
+                    <p class="first">Внешние габариты каркаса 5950 x 5900 мм</p>
+                    <p>Площадь помещений - 21,3 кв.м</p>
+                    <p>Площадь веранды - 11,5 кв.м</p>
+                    <p>
+                        Не требуется навес на даче. идет 
+                        дождь - пей чай на террасе!
+                    </p>
+                </div>
+    
+                <div class="catalogGallery2">
+                    <div class="CG2Slides fade">
+                        <img src="img/CatalogGallery/case2/1.png" alt="home 1">
+                    </div>
+                    
+                    <div class="CG2Slides fade">
+                        <img src="img/CatalogGallery/case2/2.png" alt="home 2">
+                    </div>
+                    
+                    <div class="CG2Slides fade">
+                        <img src="img/CatalogGallery/case2/3.png" alt="home 3">
+                    </div>
+    
+                    <div class="CG2Slides fade">
+                        <img src="img/CatalogGallery/case2/4.png" alt="blueprint 1">
+                    </div>
+    
+                    <div class="CG2Slides fade">
+                        <img src="img/CatalogGallery/case2/5.png" alt="frame 1">
+                    </div>
+                    
+                    <a class="prev" onclick="CG2plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="CG2plusSlides(1)">&#10095;</a>
+    
+                    <div class="dotContainer">
+                        <span class="CG2dot" onclick="CG2currentSlide(1)"></span>
+                        <span class="CG2dot" onclick="CG2currentSlide(2)"></span>
+                        <span class="CG2dot" onclick="CG2currentSlide(3)"></span>
+                        <span class="CG2dot" onclick="CG2currentSlide(4)"></span>
+                        <span class="CG2dot" onclick="CG2currentSlide(5)"></span>
+                    </div>
+                </div>
+    
+                <div class="catalogGallery3Text">
+                    <h2>НАФ-НАФ</h2>
+                    <h3>В ТОЧНОСТИ КАК СРЕДНИЙ БРАТ, НО С САН-УЗЛОМ И КЛАДОВОЙ</h3>
+                    <p class="first">Внешние габариты каркаса 7900 x 5900 мм</p>
+                    <p>Площадь помещений - 31,9 кв.м</p>
+                    <p>Площадь веранды - 11, 5 кв.м</p>
+                    <p>
+                        Наф-Наф домосед, веранда есть и есть клозет
+                    </p>
+                </div>
+    
+                <div class="catalogGallery3">
+                    <div class="CG3Slides fade">
+                        <img src="img/CatalogGallery/case3/1.png" alt="home 1">
+                    </div>
+                    
+                    <div class="CG3Slides fade">
+                        <img src="img/CatalogGallery/case3/2.png" alt="home 2">
+                    </div>
+                    
+                    <div class="CG3Slides fade">
+                        <img src="img/CatalogGallery/case3/3.png" alt="home 3">
+                    </div>
+    
+                    <div class="CG3Slides fade">
+                        <img src="img/CatalogGallery/case3/4.png" alt="blueprint 1">
+                    </div>
+    
+                    <div class="CG3Slides fade">
+                        <img src="img/CatalogGallery/case3/5.png" alt="frame 1">
+                    </div>
+                    
+                    <a class="prev" onclick="CG3plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="CG3plusSlides(1)">&#10095;</a>
+    
+                    <div class="dotContainer">
+                        <span class="CG3dot" onclick="CG3currentSlide(1)"></span>
+                        <span class="CG3dot" onclick="CG3currentSlide(2)"></span>
+                        <span class="CG3dot" onclick="CG3currentSlide(3)"></span>
+                        <span class="CG3dot" onclick="CG3currentSlide(4)"></span>
+                        <span class="CG3dot" onclick="CG3currentSlide(5)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как заказать -->
+
+    <section>
+        <div class="order" id="howToOrder">
+            <div class="container grid">
+                <div class="orderHeader">
+                    <h2>КАК ЗАКАЗАТЬ</h2>
+                </div>
+    
+                <div class="step1 flex stepStyle">
+                    <h3>ШАГ 1</h3>
+                    <img src="img/bigBullet.png" alt="big bullet">
+                    <p>Выбери свой вариант каркаса для расчета цены</p>
+                </div>
+    
+                <div class="step2 flex stepStyle">
+                    <h3>ШАГ 2</h3>
+                    <img src="img/bigBullet.png" alt="big bullet">
+                    <p>Оставь заявку менеджеру для решения вопросов оплаты и доставки</p>
+                </div>
+    
+                <div class="step3 flex stepStyle">
+                    <h3>ШАГ 3</h3>
+                    <img src="img/bigBullet.png" alt="big bullet">
+                    <p>По завершении производства получи комплект по заявленному адресу или забери с нашего склада</p>
+                </div>
+    
+                <div class="step4 flex stepStyle">
+                    <h3>ШАГ 4</h3>
+                    <img src="img/bigBullet.png" alt="big bullet">
+                    <p>Построй каркас по подробной интсрукции или поручи работу мастерам</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+
+    <section>
+        <div class="contact" id="contacts">
+            <div class="container flex">
+                <div class="contactHeader">
+                    <h2>КОНТАКТЫ</h2>
+                    <p>заполни форму обратной связи и мы свяжемся с тобой</p>
+                </div>
+    
+                <div class="contactForm">
+                    <!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLSd-rS_x8fAN_Ayymx3vJ1co7-87BoyaJb8jqFe2KePQkOqA3g/formResponse" method="get"> -->
+                        <script type="text/javascript">var submitted=false;</script>
+                        <iframe name="hidden_iframe" id="hidden_iframe"
+                        style="display:none;" onload="if(submitted)
+                        {window.location='http://127.0.0.1:5500/thanks.html';}"></iframe>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd-rS_x8fAN_Ayymx3vJ1co7-87BoyaJb8jqFe2KePQkOqA3g/formResponse" method="post"
+                        target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="formControl">
+                            <input type="text" name="entry.1299289784" placeholder="Имя" autocomplete="off" required>
+                        </div>
+                        <div class="formControl">
+                            <input type="tel" name="entry.65108332" placeholder="Телефон" class="phoneNumber" autocomplete="off" required>
+                        </div>
+                        <div class="formControl">
+                            <input type="text" name="entry.224265698" placeholder="Вариант дома" autocomplete="off" required>
+                        </div>
+                        <input type="submit" value="Отправить" class="formControlButton">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+
+    <footer>
+        <div class="flex">
+            <div class="leftSide">
+                <p>ИП Чернышева А.М.</p>
+                <p>ИНН 366000000</p>
+                <p>Мы используем cookies для сбора обезличенных персональных данных. 
+                    Они помогают настраивать рекламу и анализировать трафик. 
+                    Оставаясь на сайте, вы соглашаетесь на сбор таких данных.
+                </p>
+            </div>
+
+            <div class="rightSide">
+                <p>г. Воронеж, ул.Остужева, 43Ж</p>
+                <p>тел.: +7-920-443-64-83</p>
+                <p>Сайт разработан компанией ООО “Информационные системы”
+                    тел.: +7 (473) 210-48-96
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

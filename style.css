@@ -1,0 +1,1511 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+:root {
+    --primary-color: #FCFAF3;
+    --secondary-color: #FFFFFF;
+    --primary-text-color: #666A65;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #474545;
+}
+
+section  {
+    scroll-behavior: smooth;
+}
+
+
+/* Служебные стили */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Навигация */
+
+.navbar {
+    background-color: var(--secondary-color);
+    height: 109px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li  {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #474545;
+    padding: 19px;
+    margin: 0 5px;
+    line-height: 1;
+    transition: all ease-in-out 0.2s;
+    margin: auto;
+}
+
+.navbar a:hover {
+    background-color: #E1B842;
+    border-radius:8px;
+    color: var(--secondary-color);
+}
+
+/* Заголовок */
+
+.mainTitle {
+    background-color: var(--primary-color);
+    height: 211px;
+}
+
+.mainTitle .flex {
+    justify-content: start;
+    flex-direction: column;
+}
+
+.mainTitle h1 {
+    margin-top: 28px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 66px;
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 65px;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+.mainTitle h2 {
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    color: #E1B842;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+/* Построй дом сам */
+
+.buldYourself {
+    background-color: var(--primary-color);
+    height: 700px;
+}
+
+.buldYourself .container {
+    max-width: 1262px;
+}
+
+.buldYourself .grid {
+    justify-content: center;
+    align-items: flex-start;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.buildYourselfText {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.buildYourselfGallery {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.buildYourselfButton {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+    justify-self: center;
+    margin-top: 33px;
+}
+
+.buildYourselfButton a {
+    padding: 24px 15px;
+    background: #E1B842;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: var(--primary-text-color);
+}
+
+.buildYourselfGallery {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.buildYourselfGallery .mySlides img {
+    width:100%
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    /* color: rgb(145, 164, 189) !important; */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(65, 58, 58, 0.8); 
+    color: var(--primary-color);
+}
+
+.numbertext {
+    color: var(--primary-text-color);
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.buildYourselfGallery .text {
+    text-align: center;
+    color: var(--primary-text-color);
+    font-size: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.buildYourselfGallery .dotContainer {
+    text-align: center;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.buildYourselfText h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 5px;
+}
+
+.buildYourselfText ul {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    color: var(--primary-text-color);
+}
+
+.buildYourselfText li {
+    padding-top: 25px;
+    list-style: none;
+    background: url(img/bullet.png) no-repeat 0 30px;
+    padding-left: 26px;
+}
+
+/* С чего начать */
+
+.startWith {
+    background-color: var(--primary-color);
+    height: 765px;
+}
+
+.startWith .container {
+    max-width: 1262px;
+}
+
+.startWith .grid {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.startWithText {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.startWithImage {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; 
+    justify-self:center;
+}
+
+.startWithOptions {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.startWithText h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.startWithText p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    padding-top: 25px;
+}
+
+.startWithText ol {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    padding-top: 25px;
+    padding-left: 26px;
+}
+
+.startWithOptions {
+    position: relative;
+    margin: auto;
+    align-items:flex-end
+}
+
+#homeHidden {
+    position: absolute;
+    right: 35%;
+    bottom: 1%;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+#verandaHidden {
+    position: absolute;
+    right: 35%;
+    bottom: 1%;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.2s ease;
+}
+
+#bathroomHidden {
+    position: absolute;
+    right: 0%;
+    bottom: 1%;
+    opacity: 0; 
+    transition: 0.2s ease; 
+}
+
+/* Инструкция */
+
+.manual {
+    background-color: var(--primary-color);
+    height: 1510px;
+}
+
+.manual .container {
+    max-width: 1262px;
+}
+
+.manual .grid {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 0px;
+}
+
+.manualText {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    margin: auto;
+}
+
+.manualImage {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; 
+    justify-self: center;
+}
+
+.manualText .flex {
+    flex-direction: column;
+}
+
+.manualHeader h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.manualHeader h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    color: #E1B842;
+}
+
+.manualText .first {
+    margin-top: 25px;
+}
+
+.manualText p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    margin-top: 15px;
+    word-wrap: break-word;
+    max-width: 1000px;
+}
+
+.manualText .caption {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    padding-left: 0px;
+    background: none;
+}
+
+.manualText ul {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.manualText li {
+    background: url(img/bullet.png) no-repeat 0 13px;
+    padding-left: 26px;
+    padding-top: 9px;
+}
+
+.manualText .brush {
+    position: absolute;
+    top: 328px;
+    left: -110px;
+}
+
+.manualText .nails {
+    position: absolute;
+    top: 169px;
+    left: 950px;
+}
+
+.manualText .helmet {
+    position: absolute;
+    top: 564px;
+    left: 900px;
+}
+
+/* Каталог */
+
+.catalog {
+    background-color: var(--primary-color);
+    height: 1410px;
+}
+
+.catalog .container {
+    max-width: 1262px;
+    /* max-width: 1385px; */
+}
+
+.catalog .grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 30px 0;
+}
+
+.catalogHeader {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    justify-self:center;
+}
+
+.catalogHeader h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+}
+
+.catalogGallery1Text {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.catalogGallery1 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    margin-left: 50px;
+}
+
+.CG1Slides, .CG2Slides, .CG3Slides  {
+    display: none;
+}
+
+.CG1Slides img {
+    height: auto;
+    width: 100%;
+}
+
+.CG2Slides img {
+    height: auto;
+    width: 100%;
+}
+
+.CG3Slides img {
+    height: auto;
+    width: 100%;
+}
+
+.catalogGallery2 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    margin-right: 50px;
+}
+
+.catalogGallery2Text {
+    grid-column: 4 / 6;
+    grid-row: 3 / 4;
+}
+
+.catalogGallery3Text {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.catalogGallery3 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    grid-column: 3 / 6;
+    grid-row: 4 / 5;
+    margin-left: 50px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(65, 58, 58, 0.8);
+    color: var(--primary-color);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* .prev:hover, .next:hover {
+    background-color: rgba(65, 58, 58, 0.8);
+    color: var(--primary-color);
+} */
+
+.CG1dot, .CG2dot, .CG3dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.catalogGallery1 .dotContainer,  .catalogGallery2 .dotContainer, .catalogGallery3 .dotContainer{
+    text-align: center;
+}
+
+.active, .CG1dot:hover,  .CG2dot:hover, .CG3dot:hover{
+    background-color: #717171;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.catalogGallery1Text h2, .catalogGallery2Text h2, .catalogGallery3Text h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.catalogGallery1Text h3, .catalogGallery2Text h3, .catalogGallery3Text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.catalogGallery1Text p, .catalogGallery2Text p, .catalogGallery3Text p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+}
+
+.catalogGallery1Text h3,  .catalogGallery2Text h3, .catalogGallery3Text h3{
+    padding-top: 28px;
+}
+
+.catalogGallery1Text .first,  .catalogGallery2Text .first, .catalogGallery3Text .first{
+    padding-top: 60px;
+}
+
+.catalogGallery1Text p:last-child,  .catalogGallery2Text p:last-child, .catalogGallery3Text p:last-child {
+    padding-top: 34px;
+}
+
+/* Как заказать */
+
+.order {
+    background-color: var(--primary-color);
+    height: 1000px;
+}
+
+.order .container {
+    max-width: 1262px;
+    padding-top: 100px;
+}
+
+.order .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.order .flex {
+    flex-direction: column;
+}
+
+.order .orderHeader {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    justify-self:center;
+}
+
+.order .step1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.order .step2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+}
+
+.order .step3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+}
+
+.order .step4 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 7;
+    margin-bottom: 100px;
+}
+
+.orderHeader h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.stepStyle h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.stepStyle p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: var(--primary-text-color);
+    word-wrap: break-word;
+    max-width: 209px;
+    margin-top: 22px;
+    /* text-align: center; */
+}
+
+.stepStyle img {
+    margin-top: 22px;
+}
+
+/* Контакты */
+
+.contact {
+    background-color: var(--primary-color);
+    height: 650px;
+}
+
+.contact .container {
+    max-width: 1262px;
+}
+
+.contact .flex {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contactHeader {
+    text-align: center;
+}
+
+.contactHeader h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    color: var(--primary-text-color);
+}
+
+.contactHeader p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    margin-top: 20px;
+}
+
+.contactForm {
+    margin-top: 25px;
+    border: 1px hidden black;
+    border-radius: 10px;
+    background-color:  var(--primary-color);
+}
+
+.contactForm .formControl {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.contactForm .formControl ::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    line-height: 1.2;
+}
+
+.contactForm input:focus {
+    outline: none;
+}
+
+.contactForm input[type='text'],
+.contactForm input[type='tel'] {
+    border: 0;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    width: 443px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    line-height: 1.2;
+    padding-top: 6px;
+    padding-left: 13px;
+    padding-bottom: 6px;
+    background-color:  var(--primary-color);
+}
+
+.contactForm input[type='submit'] {
+    height: 54px;
+    width: 100%;
+    background-color: rgb(255, 155, 81);
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    transition: all ease-in-out 0.1s;
+}
+
+.contactForm input[type='submit']:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+/* Подвал */
+
+footer {
+    height: 175px;
+    background-color: var(--secondary-color);
+}
+
+footer .container {
+    width: 100%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+.leftSide {
+    padding-left: 25px;
+}
+
+.leftSide p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    padding-top: 12px;
+    color: #878B86;
+}
+
+.leftSide p:last-child {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(135, 139, 134, 0.6);
+    padding-top: 50px;
+    word-wrap: break-word;
+    max-width: 700px;
+}
+
+.rightSide {
+    padding-right: 25px;
+    text-align: right;
+}
+
+.rightSide p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    padding-top: 12px;
+    color: #878B86;
+}
+
+.rightSide p:last-child {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(135, 139, 134, 0.6);
+    padding-top: 50px;
+    word-wrap: break-word;
+    max-width: 700px;
+}
+
+/* Страница благодарности */
+
+.thanks {
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+.thanks .container {
+    max-width: 1262px;
+}
+
+.thanks .flex {
+    flex-direction: column;
+}
+
+.thanksHeader {
+    text-align: center;
+}
+
+.thanksHeader h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    color: var(--primary-text-color);
+}
+
+.thanksHeader p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    margin-top: 20px;
+}
+
+.thanksButton {
+    margin-top: 45px;
+}
+
+.thanksButton a {
+    height: 54px;
+    width: 100%;
+    padding: 15px 40px;
+    background-color: rgb(255, 155, 81);
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    transition: all ease-in-out 0.1s;
+}
+
+.thanksButton a:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .navbar {
+        height: 550px;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        display: flex;
+        margin-top: -40px;
+    }
+    
+    .navbar li  {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .navbar a {
+        background-color: #E1B842;
+        border-radius:8px;
+        width: 220px;
+        margin-top: 20px;
+        color: white !important;
+    }
+
+    /* .navbar li + li {
+        background-image:url("img/separator.png") no-repeat top left;
+        padding-left: 10px
+    } */
+    
+    .navbar .flex {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .navbar a {
+        color: #474545;
+        padding: 19px;
+        margin: 0 5px;
+        line-height: 1;
+        transition: all ease-in-out 0.2s;
+        margin: auto;
+    }
+    
+    .navbar a:hover {
+        background-color: #E1B842;
+        border-radius:8px;
+        color: var(--secondary-color);
+    }
+
+    nav .flex {
+        flex-direction: column;
+    }
+
+    .navbar .phoneImage {
+        padding-bottom: 10px;
+    }
+
+    /* Заголовок */
+
+    .mainTitle {
+        height: 320px;
+    }
+
+    .mainTitle h1 {
+        font-size: 53px;
+    }
+
+    .mainTitle h2 {
+        font-size: 26px;
+    }
+
+    /* Построй дом сам */
+
+    .buldYourself {
+        height: 1200px;
+    }
+
+    .buldYourself .grid {
+        justify-content: center;
+        align-items: flex-start;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .buildYourselfText {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .buildYourselfText h2 {
+        text-align: center;
+    }
+    
+    .buildYourselfGallery {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .buildYourselfButton {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: flex-start;
+        justify-self: center;
+        margin-top: 33px;
+    }
+
+    /* С чего начать */
+
+    .startWith {
+        height: 1500px;
+        margin-top: -100px;
+    }
+
+    .startWith .grid {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .startWithText {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .startWithImage {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; 
+        justify-self:center;
+    }
+
+    .startWithOptions {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .startWith .flex {
+        flex-direction: column;
+    }
+
+    .startWithOptions {
+        padding-bottom: 50px;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space:nowrap;
+        height: 1000px;
+    }
+
+    .startWithOptions img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .startWithText h2 {
+        text-align: center;
+    }
+
+    #veranda {
+        display: inline-block;
+        /* vertical-align: top; */
+        content: url(img/homeOptions/вариант_1.png);
+        width: 70%;
+    }
+
+    #home {
+        display: inline-block;
+        content: url(img/homeOptions/вариант_2.png);
+        width: 130%;
+    }
+
+    #bathroom {
+        display: inline-block;
+        content: url(img/homeOptions/вариант_3.png);
+        width: 200%;
+    }
+
+    /* Инструкция */
+
+    .manual {
+        height: 1610px;
+    }
+
+    .manual .container {
+        max-width: 1262px;
+    }
+
+    .manual .grid {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        gap: 0px;
+    }
+
+    .manualText {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        position: relative;
+        margin: auto;
+    }
+
+    .manualImage {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; 
+        justify-self: center;
+    }
+
+    .manualImage img {
+        width: 100%;
+    }
+
+    .manualHeader h2 {
+        font-size: 44px;
+    }
+    
+    .manualHeader h3 {
+        font-size: 20px;
+    }
+    
+    .manualText .first {
+        margin-top: 25px;
+    }
+    
+    .manualText p {
+        font-size: 20px;
+    }
+
+    /* Каталог */
+
+    .catalog {
+        height: 2100px;
+    }
+
+    .catalog .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 30px 0;
+    }
+
+    .catalogHeader {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-self:center;
+        padding-bottom: 30px;
+    }
+
+    .catalogHeader h2 {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .catalogGallery1Text {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .catalogGallery1 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin-left: 0px;
+    }
+
+    .catalogGallery2 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        margin-right: 0px;
+    }
+
+    .catalogGallery2Text {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .catalogGallery3Text {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    .catalogGallery3 {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+        margin-left: 0px;
+    }
+
+    .dotContainer {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 10px;
+        color: white !important;
+        font-weight: bold;
+        font-size: 12px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(65, 58, 58, 0.8);
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* Как заказать */
+
+    .order {
+        height: 1400px;
+    }
+
+    .order .container {
+        padding-top: 70px;
+    }
+
+    .order .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .order .flex {
+        flex-direction: column;
+    }
+
+    .order .orderHeader {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-self:center;
+    }
+
+    .order .step1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .order .step2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        padding-bottom: 50px;
+    }
+
+    .order .step3 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        padding-bottom: 50px;
+    }
+
+    .order .step4 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        margin-bottom: 150px;
+    }
+
+    .orderHeader h2 {
+        font-size: 44px;
+    }
+
+    .stepStyle h3 {
+        font-size: 24px;
+    }
+
+    .stepStyle p {
+        font-size: 20px;
+        max-width: 220px;
+    }
+
+    /* Контакты */
+
+    .contact {
+        height: 650px;
+    }
+
+    .contactHeader h2 {
+        font-size: 44px;
+    }
+
+    .contactHeader p {
+        font-size: 20px;
+    }
+
+    .contactForm {
+        margin-top: 25px;
+    }
+
+    .contactForm .formControl ::placeholder{
+        font-size: 20px;
+    }
+
+    .contactForm input[type='text'],
+    .contactForm input[type='tel'] {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .contactForm input[type='submit'] {
+        height: 54px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    /* Подвал */
+
+    footer {
+        height: 250px;
+    }
+
+    footer .flex {
+        justify-content: space-between;
+    }
+
+    .leftSide {
+        padding-left: 15px;
+        padding-top: 15%;
+    }
+
+    .leftSide p {
+        font-size: 13px;
+    }
+
+    .leftSide p:last-child {
+        font-size: 9px;
+        word-wrap: break-word;
+        max-width: 400px;
+    }
+
+    .rightSide {
+        padding-right: 15px;
+        text-align: right;
+    }
+
+    .rightSide p {
+        font-size: 12px;
+    }
+
+    .rightSide p:last-child {
+        font-size: 10px;
+        line-height: 15px;
+        color: rgba(135, 139, 134, 0.6);
+        padding-top: 50px;
+        word-wrap: break-word;
+        max-width:800px;
+    }
+
+    /* Страница благодарности */
+
+    .thanksHeader h2 {
+        font-size: 40px;
+    }
+
+    .thanksHeader p {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .thanksButton {
+        margin-top: 45px;
+    }
+
+    .thanksButton a {
+        height: 54px;
+        width: 100%;
+        padding: 15px 40px;
+        border: 0;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}
