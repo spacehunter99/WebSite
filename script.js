@@ -125,3 +125,30 @@ function CG3showSlides(n) {
   slides[CG3slideIndex-1].style.display = "block";
   dots[CG3slideIndex-1].className += " active";
 }
+
+
+//Кнопка поднятия вверх
+
+let topButton = document.querySelector('.backToTopButton');
+
+window.addEventListener('scroll', trackScroll);
+topButton.addEventListener('click', backToTop);
+
+function trackScroll() {
+  let scrolled = window.pageYOffset;
+  let coords = document.documentElement.clientHeight;
+
+  if (scrolled > coords) {
+    topButton.classList.add('backToTopButtonShow');
+  }
+  if (scrolled < coords) {
+    topButton.classList.remove('backToTopButtonShow');
+  }
+}
+
+function backToTop() {
+  if (window.pageYOffset > 0) {
+    window.scrollBy(0, -140);
+    setTimeout(backToTop, 0);
+  }
+}

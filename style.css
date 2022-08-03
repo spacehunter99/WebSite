@@ -1080,6 +1080,40 @@ footer .flex {
     cursor: pointer;
 }
 
+/* Кнопка "Наверх" */
+
+.backToTopButton {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    z-index: 9999;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    background: rgb(255, 155, 81);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+    border-radius: 5px;
+    margin: auto;
+    line-height: 40px;
+}
+
+.backToTopButton:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+.backToTopButtonShow {
+    display: block;
+}
+
 /* Mobile */
 
 @media (max-width: 690px) {
@@ -1541,6 +1575,31 @@ footer .flex {
         border-radius: 10px;
         font-size: 20px;
     }
+
+    /* Кнопка "Наверх" */
+
+    /* .backToTopButton {
+        position: fixed;
+        bottom: 80px;
+        right: 70px;
+        z-index: 9999;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 30px;
+        background: rgb(255, 155, 81);
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        color: var(--secondary-color);
+        cursor: pointer;
+        border-radius: 2px;
+        display: none;
+        border-radius: 5px;
+        margin: auto;
+        line-height: 40px;
+    } */
 }
 
 /* Tablets */
@@ -1942,6 +2001,17 @@ footer .flex {
         padding-top: 1%;
     }
 
+    /* Кнопка "Наверх" */
+
+    /* .backToTopButton {
+        bottom: 100px;
+        right: 50px;
+        width: 70px;
+        height: 35px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 25px;
+    } */
 }
 
 @media (min-width: 483px) and (max-width: 690px) { 
@@ -1950,4 +2020,13 @@ footer .flex {
     .catalog {
         height: 2400px;
     }
+
+    /* .backToTopButton {
+        bottom: 10px;
+        right: 20px;
+        z-index: 9999;
+        width: 70px;
+        line-height: 30px;
+        font-size: 25px;
+    } */
 }
