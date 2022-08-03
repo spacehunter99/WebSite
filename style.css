@@ -177,6 +177,17 @@ section  {
     margin: auto;
 }
 
+.buildYourselfGallery p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 36px;
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 65px;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
 .buildYourselfGallery .mySlides img {
     width:100%
 }
@@ -1071,7 +1082,7 @@ footer .flex {
 
 /* Mobile */
 
-@media (max-width: 500px) {
+@media (max-width: 690px) {
 
     .navbar {
         height: 550px;
@@ -1191,7 +1202,7 @@ footer .flex {
     /* С чего начать */
 
     .startWith {
-        height: 2250px;
+        height: 2300px;
         margin-top: -100px;
     }
 
@@ -1199,7 +1210,7 @@ footer .flex {
         justify-content: center;
         align-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
 
     .startWithText {
@@ -1214,14 +1225,20 @@ footer .flex {
     }
 
     .option1 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; 
         text-align: center;
     }
 
     .option2 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5; 
         text-align: center;
     }
 
     .option3 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6; 
         margin-bottom: 40px;
         text-align: center;
     }
@@ -1280,7 +1297,7 @@ footer .flex {
     /* Каталог */
 
     .catalog {
-        height: 2150px;
+        height: 2100px;
     }
 
     .catalog .grid {
@@ -1528,7 +1545,7 @@ footer .flex {
 
 /* Tablets */
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 690px) and (max-width: 1000px) {
 
     /* Навигация */
 
@@ -1554,7 +1571,7 @@ footer .flex {
     .navbar a {
         background-color: #E1B842;
         border-radius:8px;
-        width: 300px;
+        width: 320px;
         margin-top: 20px;
         color: white !important;
     }
@@ -1604,7 +1621,7 @@ footer .flex {
     /* Построй дом сам */
 
     .buldYourself {
-        height: 1050px;
+        height: 1150px;
     }
 
     .buldYourself .grid {
@@ -1648,4 +1665,289 @@ footer .flex {
         margin-top: 33px;
     }
 
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 22px !important; 
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        /* background-color: rgba(65, 58, 58, 0.8); */
+        background-color: rgba(225,184,66, 0.8);
+        color: var(--primary-color);
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* С чего начать */
+
+    .startWith {
+        height: 1900px;
+        margin-top: -100px;
+    }
+
+    .startWith .grid {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .startWithText {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .startWithImage {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; 
+        justify-self:center;
+        /* margin-top: -100px; */
+    }
+
+    .option1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; 
+        text-align: center;
+    }
+
+    .option2 {
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; 
+        text-align: center;
+    }
+
+    .option3 {
+        margin-bottom: 40px;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5; 
+        text-align: center;
+    }
+
+    /* Инструкция */
+
+    .manual {
+        height: 1610px;
+    }
+
+    .manual .container {
+        max-width: 1262px;
+    }
+
+    .manual .grid {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        gap: 0px;
+    }
+
+    .manualText {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        position: relative;
+        margin: auto;
+    }
+
+    .manualImage {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; 
+        justify-self: center;
+    }
+
+    .manualImage img {
+        width: 100%;
+    }
+
+    .manualHeader h2 {
+        font-size: 44px;
+    }
+    
+    .manualHeader h3 {
+        font-size: 20px;
+    }
+    
+    .manualText .first {
+        margin-top: 25px;
+    }
+    
+    .manualText p {
+        font-size: 20px;
+    }
+
+    /* Каталог */
+
+    .catalog {
+        height: 2400px;
+    }
+
+    .catalog .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 30px 0;
+    }
+
+    .catalogHeader {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-self:center;
+        padding-bottom: 30px;
+    }
+
+    .catalogHeader h2 {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .catalogGallery1Text {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+    }
+
+    .catalogGallery1 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        /* margin-left: 0px; */
+        justify-self:center;
+    }
+
+    .catalogGallery2 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        /* margin-right: 0px; */
+    }
+
+    .catalogGallery2Text {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        text-align: center;
+    }
+
+    .catalogGallery3Text {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+        text-align: center;
+    }
+
+    .catalogGallery3 {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+        /* margin-left: 0px; */
+    }
+
+    .dotContainer {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 10px;
+        color: white !important;
+        font-weight: bold;
+        font-size: 12px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        /* background-color: rgba(65, 58, 58, 0.8); */
+        background-color: rgba(225,184,66, 0.8);
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* Как заказать */
+
+    .order {
+        height: 800px;
+    }
+
+    .order .container {
+        padding-top: 70px;
+    }
+
+    .order .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .order .flex {
+        flex-direction: column;
+    }
+
+    .order .orderHeader {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        justify-self:center;
+    }
+
+    .order .step1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .order .step2 {
+        grid-column: 2 /3;
+        grid-row: 2 / 3;
+        padding-top: 20px;
+    }
+
+    .order .step3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .order .step4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        padding-top: 80px;
+    }
+
+    .orderHeader h2 {
+        font-size: 44px;
+    }
+
+    .stepStyle h3 {
+        font-size: 24px;
+    }
+
+    .stepStyle p {
+        font-size: 20px;
+        max-width: 220px;
+    }
+
+    /* Контакты */
+
+    .contactForm input[type='submit'] {
+        -webkit-appearance: none; /* Снятие стандартого оформления кнопки браузером */
+    }
+
+    /* Подвал */
+
+    .leftSide {
+        padding-top: 1%;
+    }
+
+}
+
+@media (min-width: 483px) and (max-width: 690px) { 
+    /* Каталог */
+
+    .catalog {
+        height: 2400px;
+    }
 }
