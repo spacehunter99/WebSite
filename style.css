@@ -1542,6 +1542,10 @@ footer .flex {
         -webkit-appearance: none;
     }
 
+    select:focus {
+        visibility: hidden;
+    }
+
     .contactForm input[type='submit'] {
         height: 54px;
         width: 100%;
