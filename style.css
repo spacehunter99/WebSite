@@ -1537,6 +1537,11 @@ footer .flex {
         -webkit-appearance: none;
     }
 
+    select:required:invalid {
+        color: var(--primary-text-color);
+        -webkit-appearance: none;
+    }
+
     .contactForm input[type='submit'] {
         height: 54px;
         width: 100%;
