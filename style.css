@@ -1069,7 +1069,6 @@ footer .flex {
     cursor: pointer;
 }
 
-
 /* Mobile */
 
 @media (max-width: 500px) {
@@ -1169,6 +1168,17 @@ footer .flex {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
+
+    .buildYourselfGallery p {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 25px;
+        color: var(--primary-text-color);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 65px;
+        letter-spacing: 0.07em;
+        text-align: center;
+    }
     
     .buildYourselfButton {
         grid-column: 1 / 2;
@@ -1203,8 +1213,17 @@ footer .flex {
         justify-self:center;
     }
 
+    .option1 {
+        text-align: center;
+    }
+
+    .option2 {
+        text-align: center;
+    }
+
     .option3 {
         margin-bottom: 40px;
+        text-align: center;
     }
 
     /* Инструкция */
@@ -1505,4 +1524,128 @@ footer .flex {
         border-radius: 10px;
         font-size: 20px;
     }
+}
+
+/* Tablets */
+
+@media (min-width: 500px) and (max-width: 1000px) {
+
+    /* Навигация */
+
+    .navbar {
+        height: 550px;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        display: flex;
+        margin-top: -40px;
+    }
+    
+    .navbar li  {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .navbar a {
+        background-color: #E1B842;
+        border-radius:8px;
+        width: 300px;
+        margin-top: 20px;
+        color: white !important;
+    }
+    
+    .navbar .flex {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .navbar a {
+        color: #474545;
+        padding: 19px;
+        margin: 0 5px;
+        line-height: 1;
+        transition: all ease-in-out 0.2s;
+        margin: auto;
+    }
+    
+    .navbar a:hover {
+        background-color: #E1B842;
+        border-radius:8px;
+        color: var(--secondary-color);
+    }
+
+    nav .flex {
+        flex-direction: column;
+    }
+
+    .navbar .phoneImage {
+        padding-bottom: 10px;
+    }
+
+    /* Заголовок */
+
+    .mainTitle {
+        height: 220px;
+    }
+
+    .mainTitle h1 {
+        font-size: 53px;
+    }
+
+    .mainTitle h2 {
+        font-size: 26px;
+    }
+
+    /* Построй дом сам */
+
+    .buldYourself {
+        height: 1050px;
+    }
+
+    .buldYourself .grid {
+        justify-content: center;
+        align-items: flex-start;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .buildYourselfText {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .buildYourselfText h2 {
+        text-align: center;
+    }
+    
+    .buildYourselfGallery {
+        padding-top: 50px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .buildYourselfGallery p {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 30px;
+        color: var(--primary-text-color);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 65px;
+        letter-spacing: 0.07em;
+        text-align: center;
+    }
+    
+    .buildYourselfButton {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: flex-start;
+        justify-self: center;
+        margin-top: 33px;
+    }
+
 }
