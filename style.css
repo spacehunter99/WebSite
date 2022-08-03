@@ -948,10 +948,12 @@ section  {
 
 select:required:invalid {
     color: rgb(181, 175, 175);
+    -webkit-appearance: none;
 }
 
 option[value=""][disabled] {
     display: none;
+    -webkit-appearance: none;
 }
 
 select {
@@ -970,6 +972,7 @@ select {
     padding-top: 6px;
     padding-left: 13px;
     padding-bottom: 6px;
+    -webkit-appearance: none;
 }
 
 /* Подвал */
@@ -1531,6 +1534,7 @@ footer .flex {
     select {
         width: 300px;
         height: 50px;
+        -webkit-appearance: none;
     }
 
     .contactForm input[type='submit'] {
@@ -2024,6 +2028,10 @@ footer .flex {
 
     .contactForm input[type='submit'] {
         -webkit-appearance: none; /* Снятие стандартого оформления кнопки браузером */
+    }
+
+    select {
+        -webkit-appearance: none;
     }
 
     /* Подвал */
