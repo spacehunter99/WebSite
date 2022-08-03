@@ -406,7 +406,13 @@
                             <input type="tel" name="entry.65108332" placeholder="Телефон" class="phoneNumber" autocomplete="off" required>
                         </div>
                         <div class="formControl">
-                            <input type="text" name="entry.224265698" placeholder="Вариант дома" autocomplete="off" required>
+                            <!-- <input type="text" name="entry.224265698" placeholder="Вариант дома" autocomplete="off" required> -->
+                            <select name="entry.224265698" id="homeSelector" required>
+                                <option selected value="" disabled selected>Вариант дома</option>
+                                <option value="Ниф-ниф">Ниф-ниф</option>
+                                <option value="Нуф-нуф">Нуф-нуф</option>
+                                <option value="Наф-наф">Наф-наф</option>
+                            </select>
                         </div>
                         <input type="submit" value="Отправить" class="formControlButton">
                     </form>

@@ -946,6 +946,32 @@ section  {
     cursor: pointer;
 }
 
+select:required:invalid {
+    color: rgb(181, 175, 175);
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+select {
+    width: 443px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    line-height: 1.2;
+    padding-top: 6px;
+    padding-left: 13px;
+    padding-bottom: 6px;
+}
+
 /* Подвал */
 
 footer {
@@ -1500,6 +1526,11 @@ footer .flex {
     .contactForm input[type='tel'] {
         width: 300px;
         font-size: 20px;
+    }
+
+    select {
+        width: 300px;
+        height: 50px;
     }
 
     .contactForm input[type='submit'] {
