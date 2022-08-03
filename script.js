@@ -148,7 +148,7 @@ function trackScroll() {
 
 function backToTop() {
   if (window.pageYOffset > 0) {
-    window.scrollBy(0, -140);
+    window.scrollBy(0, -200);
     setTimeout(backToTop, 0);
   }
 }
