@@ -31,58 +31,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 } 
 
-// Анимация всплывающих домов
-
-let verandaImg = document.getElementById("veranda");
-let homeImg = document.getElementById("home");
-let bathroomImg = document.getElementById("bathroom");
-let homeHidden = document.getElementById("homeHidden");
-let verandaHidden = document.getElementById("verandaHidden");
-let bathroomHidden = document.getElementById("bathroomHidden");
-
-let homeContainer = document.getElementById("homeContainer");
-let verandaContainer = document.getElementById("verandaContainer");
-let bathroomContainer = document.getElementById("bathroomContainer");
-
-homeContainer.addEventListener("mouseover", showFirstCase)
-homeContainer.addEventListener("mouseout", hideFirstCase)
-
-function showFirstCase() {
-    homeHidden.style.opacity = "1";
-}
-
-function hideFirstCase() {
-    homeHidden.style.opacity = "0";
-}
-
-verandaContainer.addEventListener("mouseover", showSecondCase)
-verandaContainer.addEventListener("mouseout", hideSecondCase)
-
-function showSecondCase() {
-    verandaHidden.style.opacity = "1";
-    verandaImg.style.visibility = "hidden";
-}
-
-function hideSecondCase() {
-    verandaHidden.style.opacity = "0";
-    verandaImg.style.visibility = "visible";
-}
-
-bathroomContainer.addEventListener("mouseover", showThirdCase)
-bathroomContainer.addEventListener("mouseout", hideThirdCase)
-
-function showThirdCase() {
-    bathroomHidden.style.opacity = "1";
-    verandaImg.style.visibility = "hidden";
-    homeImg.style.visibility = "hidden";
-}
-
-function hideThirdCase() {
-    bathroomHidden.style.opacity = "0";
-    verandaImg.style.visibility = "visible";
-    homeImg.style.visibility = "visible";
-}
-
 //Каталоги изображений
 
 //Карусель каталога 1

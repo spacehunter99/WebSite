@@ -293,7 +293,7 @@ section  {
 
 .startWith {
     background-color: var(--primary-color);
-    height: 765px;
+    height: 1550px;
 }
 
 .startWith .container {
@@ -304,7 +304,7 @@ section  {
     justify-content: center;
     align-items: center;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .startWithText {
@@ -318,9 +318,79 @@ section  {
     justify-self:center;
 }
 
-.startWithOptions {
+.option1 {
+    text-align: center;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+}
+
+.option2 {
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.option3 {
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.option1 h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px;
+    color: var(--primary-text-color);
+}
+
+.option1 p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    color: #E1B842;
+    padding-top: 10px;
+}
+
+.option2 h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px;
+    color: var(--primary-text-color);
+}
+
+.option2 p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    color: #E1B842;
+    padding-top: 10px;
+}
+
+.option3 h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px;
+    color: var(--primary-text-color);
+}
+
+.option3 p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    color: #E1B842;
+    padding-top: 10px;
 }
 
 .startWithText h2 {
@@ -354,37 +424,6 @@ section  {
     padding-left: 26px;
 }
 
-.startWithOptions {
-    position: relative;
-    margin: auto;
-    align-items:flex-end
-}
-
-#homeHidden {
-    position: absolute;
-    right: 35%;
-    bottom: 1%;
-    z-index: 1;
-    opacity: 0;
-    transition: 0.2s ease;
-}
-
-#verandaHidden {
-    position: absolute;
-    right: 35%;
-    bottom: 1%;
-    opacity: 0;
-    z-index: 1;
-    transition: 0.2s ease;
-}
-
-#bathroomHidden {
-    position: absolute;
-    right: 0%;
-    bottom: 1%;
-    opacity: 0; 
-    transition: 0.2s ease; 
-}
 
 /* Инструкция */
 
@@ -1061,11 +1100,6 @@ footer .flex {
         margin-top: 20px;
         color: white !important;
     }
-
-    /* .navbar li + li {
-        background-image:url("img/separator.png") no-repeat top left;
-        padding-left: 10px
-    } */
     
     .navbar .flex {
         justify-content: space-between;
@@ -1147,7 +1181,7 @@ footer .flex {
     /* С чего начать */
 
     .startWith {
-        height: 1500px;
+        height: 2250px;
         margin-top: -100px;
     }
 
@@ -1169,49 +1203,8 @@ footer .flex {
         justify-self:center;
     }
 
-    .startWithOptions {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-
-    .startWith .flex {
-        flex-direction: column;
-    }
-
-    .startWithOptions {
-        padding-bottom: 50px;
-        overflow: hidden;
-        overflow-x: scroll;
-        white-space:nowrap;
-        height: 1000px;
-    }
-
-    .startWithOptions img {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .startWithText h2 {
-        text-align: center;
-    }
-
-    #veranda {
-        display: inline-block;
-        /* vertical-align: top; */
-        content: url(img/homeOptions/вариант_1.png);
-        width: 70%;
-    }
-
-    #home {
-        display: inline-block;
-        content: url(img/homeOptions/вариант_2.png);
-        width: 130%;
-    }
-
-    #bathroom {
-        display: inline-block;
-        content: url(img/homeOptions/вариант_3.png);
-        width: 200%;
+    .option3 {
+        margin-bottom: 40px;
     }
 
     /* Инструкция */
