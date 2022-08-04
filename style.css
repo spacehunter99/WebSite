@@ -1543,7 +1543,7 @@ footer .flex {
     }
 
     select:focus {
-        visibility: hidden;
+        outline: none;
     }
 
     .contactForm input[type='submit'] {
@@ -2041,6 +2041,7 @@ footer .flex {
 
     select {
         -webkit-appearance: none;
+        outline: none;
     }
 
     /* Подвал */
