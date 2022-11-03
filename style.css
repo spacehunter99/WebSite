@@ -71,7 +71,7 @@ section {
   justify-content: space-between;
 }
 
-.navbar a {
+nav a {
   color: #474545;
   padding: 19px;
   margin: 0 5px;
@@ -80,7 +80,7 @@ section {
   margin: auto;
 }
 
-.navbar a:hover {
+nav a:hover {
   background-color: #e1b842;
   border-radius: 8px;
   color: var(--secondary-color);
@@ -1728,7 +1728,7 @@ footer .flex {
     margin-top: 20px;
   }
 
-  .navbar a {
+  nav a {
     background-color: #e1b842;
     border-radius: 8px;
     width: 320px;
@@ -1741,7 +1741,7 @@ footer .flex {
     flex-direction: column;
   }
 
-  .navbar a {
+  nav a {
     color: #474545;
     padding: 19px;
     margin: 0 5px;
@@ -1750,7 +1750,7 @@ footer .flex {
     margin: auto;
   }
 
-  .navbar a:hover {
+  nav a:hover {
     background-color: #e1b842;
     border-radius: 8px;
     color: var(--secondary-color);
