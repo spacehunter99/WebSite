@@ -464,7 +464,7 @@ nav a:hover {
 
 .manual {
   background-color: var(--primary-color);
-  height: 1510px;
+  height: 1000px;
 }
 
 .manual .container {
@@ -475,21 +475,15 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr;
   gap: 0px;
 }
 
 .manualText {
   grid-column: 1 / 2;
-  grid-row: 1 / 3;
+  grid-row: 1 / 2;
   position: relative;
   margin: auto;
-}
-
-.manualImage {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  justify-self: center;
 }
 
 .manualText .flex {
@@ -1366,7 +1360,7 @@ footer .flex {
   /* Инструкция */
 
   .manual {
-    height: 1610px;
+    height: 1400px;
   }
 
   .manual .container {
@@ -1377,7 +1371,7 @@ footer .flex {
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px;
   }
 
@@ -1386,16 +1380,6 @@ footer .flex {
     grid-row: 1 / 2;
     position: relative;
     margin: auto;
-  }
-
-  .manualImage {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: center;
-  }
-
-  .manualImage img {
-    width: 100%;
   }
 
   .manualHeader h2 {
@@ -1900,7 +1884,7 @@ footer .flex {
   /* Инструкция */
 
   .manual {
-    height: 1610px;
+    height: 1000px;
   }
 
   .manual .container {
@@ -1911,7 +1895,7 @@ footer .flex {
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px;
   }
 
@@ -1920,16 +1904,6 @@ footer .flex {
     grid-row: 1 / 2;
     position: relative;
     margin: auto;
-  }
-
-  .manualImage {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: center;
-  }
-
-  .manualImage img {
-    width: 100%;
   }
 
   .manualHeader h2 {
