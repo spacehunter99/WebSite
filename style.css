@@ -596,6 +596,7 @@ nav a:hover {
   grid-column: 1 / 6;
   grid-row: 1 / 2;
   justify-self: center;
+  color: #666a65;
 }
 
 .catalogHeader h2 {
