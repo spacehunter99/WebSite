@@ -1255,6 +1255,8 @@ footer .flex {
     flex-direction: row;
     height: 60px;
     padding-bottom: 10px;
+    appearance: none;
+    -webkit-appearance: none;
   }
 
   /* Заголовок */
@@ -1762,6 +1764,8 @@ footer .flex {
     flex-direction: row;
     height: 60px;
     padding-bottom: 10px;
+    appearance: none;
+    -webkit-appearance: none;
   }
 
   /* Заголовок */
